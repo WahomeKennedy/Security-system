@@ -3,10 +3,16 @@
 //R G B  --> FF 00 00 An example is shown below
 
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 int main(){
-        int number = 0b11111111;
-        cout << number;
+    time(nullptr);
+    srand(4);
+    int number = rand();
+    // int number = 0b11111111; --binary numbers
+    //int number = 0xff;
+    cout << number;
     return 0;
 }
 
