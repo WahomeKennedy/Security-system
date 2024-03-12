@@ -29,6 +29,8 @@ int main(){
                 cout << "|__________________________________|"<<endl<<endl;
                 cout << "Please enter your username:- ";
                 cin >> name;
+                cout << "Please enter your password:- ";
+                cin >> pass;
                 cout << "Please enter your age:- ";
                 cin >> age;
 
@@ -44,7 +46,7 @@ int main(){
             }   
             break;
         case 2:{
-            i=0;
+            i==0;
 
             cout << "_________________________________"<<endl<<endl;
             cout << "|------------Login--------------|" << endl;
@@ -57,7 +59,7 @@ int main(){
             cin >> pass;
 
             if (of2.is_open()){
-                while(!of2.eof()){
+                while(of2.eof()){
                     while (getline(of2, text))
                     {
                         istringstream iss(text);
@@ -88,7 +90,7 @@ int main(){
 
         }
         case 3:{
-            i = 0;
+            i == 0;
             cout << "---------------------Change Password---------------------"<<endl;
 
             ifstream of0;
@@ -140,7 +142,7 @@ int main(){
             break;
         }
         default:
-        cout <<"Enter a valid choice";
+        cout <<"Enter a valid choice:- ";
             break;
         }
     }
